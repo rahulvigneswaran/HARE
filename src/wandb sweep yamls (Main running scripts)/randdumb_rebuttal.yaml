@@ -1,0 +1,38 @@
+method: grid
+parameters:
+  K:
+    values:
+      - 30
+  dataset:
+    distribution: categorical
+    values:
+      - adult
+      - compas
+      - give_me_some_credit
+  gt_perturbation:
+    distribution: categorical
+    values:
+      - far
+  mlmodel:
+    distribution: categorical
+    values:
+      - ann
+      - linear
+  our_recourse_method:
+    distribution: categorical
+    values:
+      - randumb
+  recourse_method:
+    distribution: categorical
+    values:
+      - wachter
+      - growing_spheres
+      - face
+      - cchvae
+      - clue
+      - crud
+  seed:
+    distribution: int_uniform
+    max: 5
+    min: 1
+program: main.py

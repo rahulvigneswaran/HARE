@@ -1,0 +1,135 @@
+adult:
+  ann:
+    pytorch:
+      feature_order:
+        - age
+        - fnlwgt
+        - education-num
+        - capital-gain
+        - hours-per-week
+        - capital-loss
+        - marital-status_Non-Married
+        - native-country_US
+        - occupation_Other
+        - race_White
+        - relationship_Non-Husband
+        - sex_Male
+        - workclass_Private
+
+  linear:
+    pytorch:
+      feature_order:
+        - age
+        - fnlwgt
+        - education-num
+        - capital-gain
+        - hours-per-week
+        - capital-loss
+        - marital-status_Non-Married
+        - native-country_US
+        - occupation_Other
+        - race_White
+        - relationship_Non-Husband
+        - sex_Male
+        - workclass_Private
+
+give_me_some_credit:
+  ann:
+    pytorch:
+      feature_order:
+        - RevolvingUtilizationOfUnsecuredLines
+        - age
+        - NumberOfTime30-59DaysPastDueNotWorse
+        - DebtRatio
+        - MonthlyIncome
+        - NumberOfOpenCreditLinesAndLoans
+        - NumberOfTimes90DaysLate
+        - NumberRealEstateLoansOrLines
+        - NumberOfTime60-89DaysPastDueNotWorse
+        - NumberOfDependents
+  linear:
+    pytorch:
+      feature_order:
+        - RevolvingUtilizationOfUnsecuredLines
+        - age
+        - NumberOfTime30-59DaysPastDueNotWorse
+        - DebtRatio
+        - MonthlyIncome
+        - NumberOfOpenCreditLinesAndLoans
+        - NumberOfTimes90DaysLate
+        - NumberRealEstateLoansOrLines
+        - NumberOfTime60-89DaysPastDueNotWorse
+        - NumberOfDependents
+
+compas:
+  ann:
+    pytorch:
+      feature_order:
+        - age
+        - two_year_recid
+        - priors_count
+        - length_of_stay
+        - c_charge_degree_M
+        - race_Other
+        - sex_Male
+  linear:
+    pytorch:
+      feature_order:
+        - age
+        - two_year_recid
+        - priors_count
+        - length_of_stay
+        - c_charge_degree_M
+        - race_Other
+        - sex_Male
+
+heloc:
+  ann:
+    pytorch:
+      feature_order:
+        - ExternalRiskEstimate
+        - MSinceOldestTradeOpen
+        - MSinceMostRecentTradeOpen
+        - AverageMInFile
+        - NumSatisfactoryTrades
+        - NumTrades60Ever2DerogPubRec
+        - NumTrades90Ever2DerogPubRec
+        - PercentTradesNeverDelq
+        - MSinceMostRecentDelq
+        - NumTotalTrades
+        - NumTradesOpeninLast12M
+        - PercentInstallTrades
+        - MSinceMostRecentInqexcl7days
+        - NumInqLast6M
+        - NumInqLast6Mexcl7days
+        - NetFractionRevolvingBurden
+        - NetFractionInstallBurden
+        - NumRevolvingTradesWBalance
+        - NumInstallTradesWBalance
+        - NumBank2NatlTradesWHighUtilization
+        - PercentTradesWBalance
+  linear:
+    pytorch:
+      feature_order:
+        - ExternalRiskEstimate
+        - MSinceOldestTradeOpen
+        - MSinceMostRecentTradeOpen
+        - AverageMInFile
+        - NumSatisfactoryTrades
+        - NumTrades60Ever2DerogPubRec
+        - NumTrades90Ever2DerogPubRec
+        - PercentTradesNeverDelq
+        - MSinceMostRecentDelq
+        - NumTotalTrades
+        - NumTradesOpeninLast12M
+        - PercentInstallTrades
+        - MSinceMostRecentInqexcl7days
+        - NumInqLast6M
+        - NumInqLast6Mexcl7days
+        - NetFractionRevolvingBurden
+        - NetFractionInstallBurden
+        - NumRevolvingTradesWBalance
+        - NumInstallTradesWBalance
+        - NumBank2NatlTradesWHighUtilization
+        - PercentTradesWBalance
+  

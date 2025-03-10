@@ -1,0 +1,47 @@
+method: grid
+parameters:
+  K:
+    values:
+      - 30
+  dataset:
+    distribution: categorical
+    values:
+      - adult
+      - compas
+      - heloc
+      - give_me_some_credit
+  gt_perturbation:
+    distribution: categorical
+    values:
+      - near
+      - intermediate
+      - far
+  mlmodel:
+    distribution: categorical
+    values:
+      - ann
+      - linear
+  multi_iter:
+    values:
+      - 5
+  our_recourse_method:
+    distribution: categorical
+    values:
+      - None
+      - binary_search
+      - binary_search_multi_iter
+  recourse_method:
+    distribution: categorical
+    values:
+      - wachter
+      - growing_spheres
+      - face
+      - cchvae
+      - clue
+      - crud
+      
+  seed:
+    distribution: int_uniform
+    max: 5
+    min: 1
+program: main.py
