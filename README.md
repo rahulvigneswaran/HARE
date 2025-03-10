@@ -65,3 +65,8 @@ If you find our work useful, please cite our paper:
 ## 🛠️ Issues & Support
 
 If you encounter any issues or bugs, please raise an issue on our GitHub repository. We welcome feedback and contributions to improve this work!
+
+## 🙏 Acknowledgements
+
+- CARLA : https://github.com/carla-recourse/CARLA
+- Configs: https://openreview.net/forum?id=HjzWIMEWipV
