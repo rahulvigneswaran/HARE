@@ -23,10 +23,8 @@ from carla.models.negative_instances import predict_negative_instances
 import carla.recourse_methods.catalog as recourse_catalog
 import carla.evaluation.catalog as evaluation_catalog
 
-from sampling import sphere_packing_centers, hyperspherical_sampling
 from user import *
 from utils import *
-from dml import *
 from config import config
 
 from base_rm_hyperparams import *
@@ -191,9 +189,6 @@ if __name__=='__main__':
 	
 	assert len(factuals) > 0, "No Factuals!"
 
-	#if needed, train embedding
-	if args.recourse_method=='pear':
-		dml_model = train_dml_model(model, args)
 
 	#create individuals
 	num_users = factuals.shape[0]
