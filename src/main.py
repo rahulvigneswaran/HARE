@@ -145,7 +145,6 @@ def _generate_binsearch_cf_recursive(u, model, base_rm, args):
 			candidates = np.concatenate([get_binary_search_cf(u.factual, candidates.iloc[i:i+1], model, 1e-06) for i in range(candidates.shape[0])], axis=0) #binsearch candidates
 		candidates = pd.DataFrame(candidates, columns=u.factual.columns).reset_index(drop=True)
 		
-		# pdb.set_trace()
 		#get best candidate index
 		bci = get_best_candidate_index(u, candidates, PREF=args.use_prefs, NOISE_PROB=args.noise_prob) #GETTING BEST CF FROM THE USER
 	
@@ -236,7 +235,7 @@ if __name__=='__main__':
 	]
 	pipeline = [pd.DataFrame([measure.get_evaluation(factuals=factuals, counterfactuals=gen_cfs).mean(axis=0)]) for measure in evaluation_measures]
 	output = pd.concat(pipeline, axis=1)
-	# pdb.set_trace()
+
 	#compute proximity between gtg-cf and generated counterfactuals
 	gt_proximity = gt_cost(factuals, gt_cfs, gen_cfs)
 	gt_proximity = pd.DataFrame([[gt_proximity['L2'][0], gt_proximity['cosine'][0]]], columns=['gt_L2_distance', 'gt_cosine_distance'])
